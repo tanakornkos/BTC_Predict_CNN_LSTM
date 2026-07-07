@@ -1,0 +1,108 @@
+<svg width="1400" height="560" viewBox="0 0 1400 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">CNN-LSTM Model Architecture</title>
+  <desc id="desc">A clean flow diagram showing the Bitcoin price prediction CNN-LSTM architecture from input features through convolution, pooling, flattening, reshaping, LSTM layers, dense layer, and predicted value.</desc>
+
+  <defs>
+    <linearGradient id="headerGradient" x1="80" y1="0" x2="1320" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F5132"/>
+      <stop offset="1" stop-color="#0B2E24"/>
+    </linearGradient>
+    <linearGradient id="greenCard" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#E9F7EF"/>
+      <stop offset="1" stop-color="#D3F0DE"/>
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#EAF3FF"/>
+      <stop offset="1" stop-color="#D8E9FF"/>
+    </linearGradient>
+    <linearGradient id="goldCard" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFF4D8"/>
+      <stop offset="1" stop-color="#F6E2A8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#102A24" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2 L12 7 L2 12 Z" fill="#1F6F54"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="560" rx="28" fill="#F8FBFA"/>
+  <rect x="40" y="34" width="1320" height="104" rx="24" fill="url(#headerGradient)"/>
+  <text x="700" y="98" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="800">CNN-LSTM Model Architecture</text>
+  <text x="700" y="126" text-anchor="middle" fill="#D7FBE8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">Bitcoin price prediction pipeline using on-chain, sentiment, and ETF features</text>
+
+  <g stroke="#1F6F54" stroke-width="4" marker-end="url(#arrow)" stroke-linecap="round">
+    <line x1="188" y1="290" x2="258" y2="290"/>
+    <line x1="372" y1="290" x2="442" y2="290"/>
+    <line x1="556" y1="290" x2="626" y2="290"/>
+    <line x1="740" y1="290" x2="810" y2="290"/>
+    <line x1="924" y1="290" x2="994" y2="290"/>
+    <line x1="1108" y1="290" x2="1178" y2="290"/>
+    <line x1="1292" y1="290" x2="1332" y2="290"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="80" y="220" width="108" height="140" rx="54" fill="url(#goldCard)" stroke="#E2C86F" stroke-width="2"/>
+    <text x="134" y="198" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Input</text>
+    <text x="134" y="386" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">10-day</text>
+    <text x="134" y="406" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">feature window</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="264" y="214" width="108" height="152" rx="22" fill="url(#blueCard)" stroke="#8CB8E8" stroke-width="2"/>
+    <rect x="282" y="232" width="108" height="152" rx="22" fill="url(#blueCard)" stroke="#8CB8E8" stroke-width="2"/>
+    <rect x="300" y="250" width="108" height="152" rx="22" fill="url(#blueCard)" stroke="#8CB8E8" stroke-width="2"/>
+    <text x="318" y="198" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Conv1D</text>
+    <text x="318" y="424" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">64 filters</text>
+    <text x="318" y="444" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">kernel size 3</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="448" y="236" width="108" height="108" rx="28" fill="#D8EFF2" stroke="#7AB9C1" stroke-width="2"/>
+    <text x="502" y="190" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">MaxPooling1D</text>
+    <text x="502" y="424" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">pool size 2</text>
+    <text x="502" y="444" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">reduced sequence</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="638" y="236" width="92" height="108" rx="28" fill="#D8EFF2" stroke="#7AB9C1" stroke-width="2"/>
+    <text x="684" y="198" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Flatten</text>
+    <text x="684" y="424" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">combine</text>
+    <text x="684" y="444" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">feature maps</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="816" y="226" width="108" height="128" rx="28" fill="#D8EFF2" stroke="#7AB9C1" stroke-width="2"/>
+    <text x="870" y="198" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Reshape</text>
+    <text x="870" y="424" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">restore sequence</text>
+    <text x="870" y="444" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">for LSTM input</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="1000" y="220" width="108" height="140" rx="38" fill="url(#greenCard)" stroke="#7BBF8E" stroke-width="2"/>
+    <rect x="1032" y="238" width="108" height="140" rx="38" fill="url(#greenCard)" stroke="#7BBF8E" stroke-width="2"/>
+    <text x="1054" y="198" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">LSTM Stack</text>
+    <text x="1054" y="424" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">LSTM 1: 50 units</text>
+    <text x="1054" y="444" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">returns sequences</text>
+    <text x="1054" y="464" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">LSTM 2: 50 units</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="1184" y="230" width="108" height="120" rx="32" fill="#F1E7B2" stroke="#D1BD62" stroke-width="2"/>
+    <text x="1238" y="198" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Dense</text>
+    <text x="1238" y="424" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">single output</text>
+    <text x="1238" y="444" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">price neuron</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <circle cx="1354" cy="290" r="46" fill="#F6D77A" stroke="#D3A629" stroke-width="3"/>
+    <text x="1354" y="198" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Prediction</text>
+    <text x="1354" y="292" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">BTC</text>
+    <text x="1354" y="318" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Close</text>
+    <text x="1354" y="424" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">predicted value</text>
+  </g>
+
+  <rect x="88" y="500" width="1224" height="34" rx="17" fill="#EAF5F0"/>
+  <text x="700" y="522" text-anchor="middle" fill="#315F50" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Input shape: batch size x window size x features x channel | Output: next Bitcoin closing price</text>
+</svg>
