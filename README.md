@@ -74,13 +74,3 @@ pip install pandas numpy scikit-learn matplotlib tensorflow keras requests yfina
 
 The notebook was originally developed in Google Colab. Some cells may use paths such as `/content/drive/MyDrive/FDA/`. If running locally, update those paths to match the location of your data files.
 
-## Course Information
-
-Course: Financial Data Analytics  
-Instructor: Asst. Prof. Dr. Chaiwat Nuthong
-
-Team members:
-
-- Kanatach Eaimrittikrai
-- Tanakorn Kosawanichkarn
-- Warunyoo Panjing
