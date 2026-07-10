@@ -1,6 +1,6 @@
 # Bitcoin Price Forecasting Using CNN-LSTM
 
-![BTC price prediction comparison](assets/btc_price_prediction_comparison.png)
+![BTC price prediction comparison](btc_price_prediction_comparison.png)
 
 This repository contains an explained Jupyter notebook for a Financial Data Analytics project on Bitcoin price forecasting. The project compares CNN-LSTM models using on-chain metrics, market sentiment from the Fear & Greed Index, and Bitcoin ETF inflow data.
 
@@ -34,7 +34,7 @@ Bitcoin is highly volatile, and its price can be influenced by network activity,
 
 ## Methodology
 
-![Project methodology diagram](assets/methodology_diagram.svg)
+![Project methodology diagram](methodology_diagram.svg)
 
 The notebook follows this workflow:
 
@@ -50,7 +50,7 @@ The notebook follows this workflow:
 
 ## CNN-LSTM Architecture
 
-![CNN-LSTM model architecture](assets/cnn_lstm_architecture.svg)
+![CNN-LSTM model architecture](cnn_lstm_architecture.svg)
 
 The model combines convolutional and recurrent layers:
 
