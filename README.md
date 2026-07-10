@@ -1,6 +1,6 @@
 # Bitcoin Price Forecasting Using CNN-LSTM
 
-![BTC price prediction comparison](btc_price_prediction_comparison.png)
+![BTC price prediction comparison](assets/btc_price_prediction_comparison.png)
 
 This repository contains an explained Jupyter notebook for a Financial Data Analytics project on Bitcoin price forecasting. The project compares CNN-LSTM models using on-chain metrics, market sentiment from the Fear & Greed Index, and Bitcoin ETF inflow data.
 
@@ -14,6 +14,7 @@ Bitcoin is highly volatile, and its price can be influenced by network activity,
 | --- | --- |
 | `BTC_Predict_CNN_LSTM.ipynb` | Main explained notebook with section headers, code, preprocessing steps, model training, and evaluation |
 | `assets/btc_price_prediction_comparison.png` | Result image extracted from the project PowerPoint presentation |
+| `assets/methodology_diagram.svg` | Clean methodology workflow diagram |
 | `assets/cnn_lstm_architecture.svg` | Clean CNN-LSTM architecture diagram for the README |
 
 ## Model Variants
@@ -33,6 +34,8 @@ Bitcoin is highly volatile, and its price can be influenced by network activity,
 
 ## Methodology
 
+![Project methodology diagram](assets/methodology_diagram.svg)
+
 The notebook follows this workflow:
 
 1. Collect Bitcoin price, on-chain, sentiment, and ETF data.
@@ -47,7 +50,7 @@ The notebook follows this workflow:
 
 ## CNN-LSTM Architecture
 
-![CNN-LSTM model architecture](cnn_lstm_architecture.svg)
+![CNN-LSTM model architecture](assets/cnn_lstm_architecture.svg)
 
 The model combines convolutional and recurrent layers:
 
@@ -74,3 +77,13 @@ pip install pandas numpy scikit-learn matplotlib tensorflow keras requests yfina
 
 The notebook was originally developed in Google Colab. Some cells may use paths such as `/content/drive/MyDrive/FDA/`. If running locally, update those paths to match the location of your data files.
 
+## Course Information
+
+Course: Financial Data Analytics  
+Instructor: Asst. Prof. Dr. Chaiwat Nuthong
+
+Team members:
+
+- Kanatach Eaimrittikrai
+- Tanakorn Kosawanichkarn
+- Warunyoo Panjing
