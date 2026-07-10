@@ -1,0 +1,140 @@
+<svg width="1400" height="760" viewBox="0 0 1400 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Project Methodology Diagram</title>
+  <desc id="desc">A clean workflow diagram showing data preparation, model development, price prediction, and analysis for the Bitcoin price forecasting project.</desc>
+
+  <defs>
+    <linearGradient id="header" x1="80" y1="0" x2="1320" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F5132"/>
+      <stop offset="1" stop-color="#0B2E24"/>
+    </linearGradient>
+    <linearGradient id="panelGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F4FBF7"/>
+      <stop offset="1" stop-color="#E6F4EC"/>
+    </linearGradient>
+    <linearGradient id="panelBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F5F9FF"/>
+      <stop offset="1" stop-color="#E7F0FF"/>
+    </linearGradient>
+    <linearGradient id="panelGold" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFF9EC"/>
+      <stop offset="1" stop-color="#F8EBC4"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#102A24" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2 L12 7 L2 12 Z" fill="#1F6F54"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="760" rx="28" fill="#F8FBFA"/>
+  <rect x="40" y="34" width="1320" height="104" rx="24" fill="url(#header)"/>
+  <text x="700" y="100" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="50" font-weight="800">Methodology</text>
+  <text x="700" y="126" text-anchor="middle" fill="#D7FBE8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">Bitcoin price forecasting workflow from raw data to model analysis</text>
+
+  <g stroke="#1F6F54" stroke-width="4" marker-end="url(#arrow)" stroke-linecap="round">
+    <line x1="405" y1="390" x2="477" y2="390"/>
+    <line x1="925" y1="390" x2="997" y2="390"/>
+    <line x1="1120" y1="330" x2="1120" y2="262"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="64" y="178" width="344" height="502" rx="26" fill="url(#panelGreen)" stroke="#B7DCC8" stroke-width="2"/>
+    <text x="236" y="226" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Data Preparation</text>
+
+    <g>
+      <rect x="95" y="270" width="108" height="62" rx="18" fill="#FFFFFF" stroke="#69A987" stroke-width="2"/>
+      <text x="149" y="296" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">BTC Price</text>
+      <text x="149" y="316" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">OHLCV data</text>
+
+      <rect x="219" y="270" width="108" height="62" rx="18" fill="#FFFFFF" stroke="#69A987" stroke-width="2"/>
+      <text x="273" y="296" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">ETF Inflow</text>
+      <text x="273" y="316" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">fund flows</text>
+
+      <rect x="95" y="354" width="108" height="62" rx="18" fill="#FFFFFF" stroke="#69A987" stroke-width="2"/>
+      <text x="149" y="380" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Fear &amp; Greed</text>
+      <text x="149" y="400" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">sentiment</text>
+
+      <rect x="219" y="354" width="108" height="62" rx="18" fill="#FFFFFF" stroke="#69A987" stroke-width="2"/>
+      <text x="273" y="380" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">On-Chain</text>
+      <text x="273" y="400" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">metrics</text>
+    </g>
+
+    <line x1="149" y1="332" x2="149" y2="452" stroke="#1F6F54" stroke-width="3" stroke-linecap="round"/>
+    <line x1="273" y1="332" x2="273" y2="452" stroke="#1F6F54" stroke-width="3" stroke-linecap="round"/>
+    <line x1="149" y1="452" x2="273" y2="452" stroke="#1F6F54" stroke-width="3" stroke-linecap="round"/>
+    <line x1="211" y1="452" x2="211" y2="486" stroke="#1F6F54" stroke-width="3" marker-end="url(#arrow)" stroke-linecap="round"/>
+
+    <rect x="122" y="496" width="178" height="70" rx="20" fill="#FFFFFF" stroke="#1F6F54" stroke-width="3"/>
+    <text x="211" y="524" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Data</text>
+    <text x="211" y="548" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Preprocessing</text>
+
+    <line x1="211" y1="566" x2="211" y2="600" stroke="#1F6F54" stroke-width="3" marker-end="url(#arrow)" stroke-linecap="round"/>
+    <path d="M120 618 H304 L272 654 H88 Z" fill="#FFFFFF" stroke="#1F6F54" stroke-width="3" stroke-linejoin="round"/>
+    <text x="196" y="641" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Cleaned Data</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="480" y="178" width="444" height="502" rx="26" fill="url(#panelBlue)" stroke="#C5D8F4" stroke-width="2"/>
+    <text x="702" y="226" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Model Development</text>
+
+    <rect x="528" y="268" width="348" height="164" rx="24" fill="#FFFFFF" stroke="#79A7D8" stroke-width="3"/>
+    <text x="702" y="300" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="800">Prepare Time-Series Inputs</text>
+
+    <rect x="550" y="322" width="136" height="44" rx="15" fill="#F5F9FF" stroke="#79A7D8" stroke-width="2"/>
+    <text x="618" y="350" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Data Splitting</text>
+
+    <rect x="718" y="322" width="136" height="44" rx="15" fill="#F5F9FF" stroke="#79A7D8" stroke-width="2"/>
+    <text x="786" y="350" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Feature Scaling</text>
+
+    <rect x="550" y="376" width="136" height="44" rx="15" fill="#F5F9FF" stroke="#79A7D8" stroke-width="2"/>
+    <text x="618" y="404" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Train-Test Split</text>
+
+    <rect x="718" y="376" width="136" height="44" rx="15" fill="#F5F9FF" stroke="#79A7D8" stroke-width="2"/>
+    <text x="786" y="394" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Sliding Window</text>
+    <text x="786" y="412" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Sequences</text>
+
+    <line x1="702" y1="432" x2="702" y2="472" stroke="#1F6F54" stroke-width="3" marker-end="url(#arrow)" stroke-linecap="round"/>
+
+    <rect x="528" y="488" width="348" height="136" rx="24" fill="#FFFFFF" stroke="#79A7D8" stroke-width="3"/>
+    <text x="702" y="520" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="800">Train CNN-LSTM Models</text>
+
+    <rect x="554" y="544" width="126" height="46" rx="15" fill="#F5F9FF" stroke="#79A7D8" stroke-width="2"/>
+    <text x="617" y="572" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">6 Variables</text>
+
+    <rect x="638" y="590" width="128" height="46" rx="15" fill="#F5F9FF" stroke="#79A7D8" stroke-width="2"/>
+    <text x="702" y="618" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Fear &amp; Greed</text>
+
+    <rect x="724" y="544" width="126" height="46" rx="15" fill="#F5F9FF" stroke="#79A7D8" stroke-width="2"/>
+    <text x="787" y="572" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">With ETF</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1000" y="178" width="336" height="502" rx="26" fill="url(#panelGold)" stroke="#E8D29A" stroke-width="2"/>
+    <text x="1168" y="226" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Analysis</text>
+
+    <rect x="1028" y="266" width="280" height="136" rx="24" fill="#FFFFFF" stroke="#C6A94A" stroke-width="3"/>
+    <text x="1168" y="298" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="800">Visual Comparisons</text>
+
+    <rect x="1052" y="318" width="118" height="48" rx="15" fill="#FFF9EC" stroke="#C6A94A" stroke-width="2"/>
+    <text x="1111" y="338" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Training Loss</text>
+    <text x="1111" y="356" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Comparison</text>
+
+    <rect x="1194" y="318" width="92" height="48" rx="15" fill="#FFF9EC" stroke="#C6A94A" stroke-width="2"/>
+    <text x="1240" y="338" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">RMSE</text>
+    <text x="1240" y="356" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">MAE</text>
+
+    <rect x="1092" y="374" width="152" height="48" rx="15" fill="#FFF9EC" stroke="#C6A94A" stroke-width="2"/>
+    <text x="1168" y="394" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Predicted vs.</text>
+    <text x="1168" y="412" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Actual Prices</text>
+
+    <rect x="1046" y="476" width="148" height="72" rx="20" fill="#FFFFFF" stroke="#C6A94A" stroke-width="3"/>
+    <text x="1120" y="506" text-anchor="middle" fill="#123B30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Price</text>
+    <text x="1120" y="530" text-anchor="middle" fill="#42665A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Prediction</text>
+
+    <line x1="1120" y1="402" x2="1120" y2="476" stroke="#1F6F54" stroke-width="3" marker-end="url(#arrow)" stroke-linecap="round"/>
+  </g>
+
+  <rect x="190" y="706" width="1020" height="34" rx="17" fill="#EAF5F0"/>
+  <text x="700" y="728" text-anchor="middle" fill="#315F50" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Data is cleaned and aligned by date, transformed into time windows, trained through CNN-LSTM models, then evaluated with charts and error metrics.</text>
+</svg>
